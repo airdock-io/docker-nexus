@@ -35,4 +35,4 @@ save:
 	@echo "Image $(FULLNAME):$(VERSION) exported to $(OUTPUT_FILE)"
 
 run:
-	@echo "IPAddress =" $$(docker inspect --format '{{.NetworkSettings.IPAddress}}' $$(docker run -d $(FULLNAME):$(VERSION)))
+	@echo "IPAddress =" $$(docker inspect --format '{{.NetworkSettings.IPAddress}}' $$(docker run -d -p 8081:8081 $(FULLNAME):$(VERSION)))
