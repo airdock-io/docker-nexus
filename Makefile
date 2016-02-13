@@ -1,7 +1,7 @@
 NAMESPACE = airdock
 NAME = nexus
 FULLNAME = $(NAMESPACE)/$(NAME)
-VERSION = 2.12
+VERSION = 2.12.0-01
 
 .PHONY: all clean build tag_latest release debug run save
 

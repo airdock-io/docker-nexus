@@ -39,7 +39,7 @@ Please do [post install configuration](https://books.sonatype.com/nexus-book/ref
 
 # Change Log
 
-## Tag 2.12 and latest (current)
+## Tag 2.12.0-01 and latest (current)
 
 - add install under /srv/java/nexus (NEXUS_HOME)
 - use MIT license
