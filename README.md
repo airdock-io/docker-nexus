@@ -5,9 +5,9 @@ Docker image for Nexus Repository Manager
 This repository contains **Dockerfile** for [Docker](https://www.docker.com/)'s [automated build](https://registry.hub.docker.com/u/airdock/) published to the public [Docker Hub Registry](https://registry.hub.docker.com/).
 
 
-> Name: airdock/nexus:2.12 (or airdock/nexus:latest) 
+> Name: airdock/nexus:2.12 (or airdock/nexus:latest)
 
-**Dependency**: airdock/oracle-jdk:latest
+**Dependency**: airdock/oracle-jdk:jre-1.8
 
 **Few links**:
 
@@ -27,7 +27,7 @@ Or:
 	'docker run -d -p 8081:8081 -v /data/sonatype-work:/srv/java/nexus/sonatype-work airdock/nexus:latest '
 
  Where /data/sonatype-work is your local nexus configuration
- 
+
 By default:
 - Console: http://localhost:8081/nexus
 - The default administrator username and password combination is admin and admin123
