@@ -3,7 +3,7 @@
 # DESCRIPTION:    Nexus Repository Manager
 # TO_BUILD:       docker build --rm -t airdock/nexus .
 # SOURCE:         https://github.com/airdock/docker-nexus
-FROM airdock/oracle-jdk:latest
+FROM airdock/oracle-jdk:jre-1.8
 
 ENV NEXUS_HOME /srv/java/nexus
 
@@ -19,4 +19,3 @@ EXPOSE 8081
 WORKDIR /srv/java/nexus
 
 CMD ["gosu", "java:java", "/srv/java/nexus/bin/nexus", "console"]
-
