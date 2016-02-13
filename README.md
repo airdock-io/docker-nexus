@@ -24,7 +24,7 @@ Execute:
 
 Or:
 
-	'docker run -d -p 8081:8081 -v /data/sonatype-work:/srv/java/nexus/sonatype-work airdock/nexus:latest '
+	'docker run -d -p 8081:8081 -v /data/sonatype-work:/srv/java/sonatype-work airdock/nexus:latest '
 
  Where /data/sonatype-work is your local nexus configuration
 
