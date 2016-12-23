@@ -1,7 +1,7 @@
 NAMESPACE = airdock
 NAME = nexus
 FULLNAME = $(NAMESPACE)/$(NAME)
-VERSION = dev
+VERSION = dev-2.13
 
 .PHONY: all clean build tag_latest release debug run save
 
@@ -27,7 +27,7 @@ release: build tag_latest
 	@git push origin v-$(VERSION)
 
 debug:
-	@docker run -t -i $(FULLNAME):$(VERSION) /bin/bash
+	@docker run -t -i -p 8081:8081 $(FULLNAME):$(VERSION) /bin/bash
 
 save:
 	@OUTPUT_FILE =  $(NAME)_$(VERSION)_`date +%Y%m%d%H%M%S`.tgz
