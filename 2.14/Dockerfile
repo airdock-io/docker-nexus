@@ -3,10 +3,10 @@
 # DESCRIPTION:    Nexus Repository Manager
 # TO_BUILD:       docker build --rm -t airdock/nexus .
 # SOURCE:         https://github.com/airdock/docker-nexus
-FROM airdock/oracle-jdk:jre-8u74
+FROM airdock/oracle-jdk:jre-1.8
 
 ENV NEXUS_HOME /srv/java/nexus
-ENV NEXUS_VERSION 2.14.2-01
+ARG NEXUS_VERSION=2.14.2-01
 
 RUN apt-get update -qq && apt-get install -y --no-install-recommends ca-certificates && \
     cd /tmp && curl -L -O http://download.sonatype.com/nexus/oss/nexus-${NEXUS_VERSION}-bundle.tar.gz  && \

@@ -6,7 +6,7 @@
 FROM airdock/oracle-jdk:jre-1.8
 
 ENV NEXUS_HOME /srv/java/nexus
-ENV NEXUS_VERSION 2.13.0-01
+ARG NEXUS_VERSION=2.13.0-01
 
 RUN apt-get update -qq && apt-get install -y --no-install-recommends ca-certificates && \
     cd /tmp && curl -L -O http://download.sonatype.com/nexus/oss/nexus-${NEXUS_VERSION}-bundle.tar.gz  && \

@@ -39,7 +39,8 @@ Execute:
 	docker run -d -p 8081:8081 airdock/nexus:latest
 ```
 
-Console: http://localhost:8081/nexus
+Console for lastest and 3.2: http://localhost:8081/
+Console for older version: http://localhost:8081/nexus
 The default administrator username and password combination is admin and admin123
 
 
@@ -51,6 +52,18 @@ The default administrator username and password combination is admin and admin12
 
  Where /data/sonatype-work is your local nexus configuration
 
+## 3.2
+
+You can control the JVM arguments:
+
+JAVA_MAX_HEAP, passed as -Xmx. Defaults to 1200m.
+JAVA_MIN_HEAP, passed as -Xms. Defaults to 1200m.
+EXTRA_JAVA_OPTS. Additional options can be passed to the JVM via this variable.
+
+
+```
+	docker run -d -p 8081:8081 -e JAVA_MAX_HEAP=1500m airdock/nexus:latest
+```
 
 
 
