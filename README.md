@@ -1,5 +1,9 @@
 # Nexus Repository Manager [![](https://images.microbadger.com/badges/image/airdock/nexus:latest.svg)](https://microbadger.com/images/airdock/nexus:latest "Get your own image badge on microbadger.com")
 
+> This project is no longer actively maintained.
+>
+> Back in 2017, few open source project provide docker image, etc and our jobs had a real nice goal. Now (2023), all open source community is mature, provides tools and images more than we needs. Thanks to all members for their time and effort.
+
 Docker image for [Nexus Repository Manager](http://www.sonatype.org/nexus/).
 
 This repository contains **Dockerfile** for [Docker](https://www.docker.com/)'s [automated build](https://registry.hub.docker.com/u/airdock/) published to the public [Docker Hub Registry](https://registry.hub.docker.com/).
